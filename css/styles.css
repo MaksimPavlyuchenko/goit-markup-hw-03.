@@ -96,7 +96,6 @@ body{
 /* Hero */
 .hero{background-color: #2F303A;
 text-align: center; 
-height: 600px;
 padding-top: 200px;
 padding-bottom: 200px;
 }
@@ -129,12 +128,12 @@ padding-bottom: 200px;
     text-align: center;}
  .list.activity{
     display: flex;
-    margin-bottom: 95px;
+    margin-bottom: 94px;
     gap: 30px;}
     /* Section-edge */
 .primary-edge{
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
  .edge-title{
         font-size: 14px;
@@ -150,8 +149,8 @@ padding-bottom: 200px;
         }
 /* Section-team */
 .section-team{
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .list.team{
     display: flex;
@@ -175,9 +174,9 @@ padding-bottom: 200px;
     }
     /* Footer */
  .footer{background-color: #2F303A;
-         height: 252px;
-        padding-top: 60px;
-        padding-bottom: 60px;}
+       
+         padding-top: 60px;
+         padding-bottom: 60px;}
  .footer-logo{
         color:var(--primery-white-color);
         font-family: 'Raleway';
@@ -207,24 +206,61 @@ padding-bottom: 200px;
   .footer-contact:hover{color: var(--akcent-color);}       
         /* Filter */
  .filter-button{ 
+        display: flex;
+        padding: 6px 22px;
+        gap: 10px;
         font-family: 'Roboto';
         cursor: pointer;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.63;
-        letter-spacing: 0.03em;}
+        letter-spacing: 0.03em;
+        border: 1px solid transparent;
+        border-radius: 4px;}
   .filter-button:hover{background-color:var(--akcent-color); color:var(--primery-white-color);}
    /* Portfolio List */
-  .list-header{
-            font-size: 18px;
-            line-height: 2;
-            letter-spacing: 0.06em;}
-  .list-text{
-            font-size: 16px;
-            line-height:1.88;
-            letter-spacing: 0.03em;
-            color:var(--additional-text-color);}
-   .filter{
+   .list-header{
+         font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+
+        padding-top: 20px;
+        margin-right: 24px;
+        margin-bottom: 4px;
+        margin-left:24px;
+        }
+.list-text{
+          font-size: 16px;
+        line-height:1.88;
+        letter-spacing: 0.03em;
+            color:var(--additional-text-color);
+        
+        margin-top: 0;
+        margin-right: 24px;
+        margin-bottom: 20px;
+        margin-left: 24px;
+        }
+ .filter{
       height: 0;
       overflow: hidden;
       position: absolute;}
+.list.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 175px;
+}
+.list.button .btn.item+.btn.item {
+    margin-left: 8px;
+}
+.list.project{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 34px;
+    margin-bottom: 94px;
+}
+.border.project{
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+}
