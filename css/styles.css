@@ -255,9 +255,15 @@ padding-bottom: 200px;
 .list.project{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
     margin-top: 34px;
     margin-bottom: 94px;
+}
+.project.item{
+    margin-right: 30px;
+    width:calc(100%-60px/3);
+}
+.project.item:nth-child(3n){
+    margin-right: 0;
 }
 .border.project{
     border-bottom: 1px solid #EEEEEE;
