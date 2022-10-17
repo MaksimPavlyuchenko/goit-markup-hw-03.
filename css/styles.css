@@ -29,7 +29,7 @@ body{
           }
 .header{
  border-bottom: 1px solid #ECECEC;
- height: 80px;
+
 }
  /* FLEX nav */
  .main-nav{
@@ -107,18 +107,25 @@ padding-bottom: 200px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     }
 .hero-button{
     border-radius: 4px;
     padding: 10px 32px;
     border: 1px solid transparent;
+
     background-color: var(--akcent-color); 
     color: var(--primery-white-color);
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height:1.88;
-    letter-spacing: 0.06em;}
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+}
     /* SECTION*/
  .section-title{
     font-size: 36px;
@@ -128,8 +135,10 @@ padding-bottom: 200px;
     text-align: center;}
  .list.activity{
     display: flex;
-    margin-bottom: 94px;
     gap: 30px;}
+    .list-activity{
+        padding-bottom: 94px;
+    }
     /* Section-edge */
 .primary-edge{
     padding-top: 94px;
@@ -151,17 +160,23 @@ padding-bottom: 200px;
 .section-team{
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color:  #F5F4FA;;
 }
 .list.team{
     display: flex;
     gap: 30px;}
+.item-team{
+    background-color: var(--primery-white-color);}  
+.team.div{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}      
 
 .team-name{
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 10px;
            }
 .team-prof{
@@ -170,7 +185,6 @@ padding-bottom: 200px;
     letter-spacing: 0.03em;
     color:var(--additional-text-color);
     text-align: center;
-    margin-bottom: 30px;
     }
     /* Footer */
  .footer{background-color: #2F303A;
@@ -219,26 +233,21 @@ padding-bottom: 200px;
         border-radius: 4px;}
   .filter-button:hover{background-color:var(--akcent-color); color:var(--primery-white-color);}
    /* Portfolio List */
+   .portfolio.main{
+    padding-top: 94px;
+    padding-bottom: 94px;
+   }
    .list-header{
          font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
-
-        padding-top: 20px;
-        margin-right: 24px;
         margin-bottom: 4px;
-        margin-left:24px;
         }
 .list-text{
-          font-size: 16px;
+        font-size: 16px;
         line-height:1.88;
         letter-spacing: 0.03em;
-            color:var(--additional-text-color);
-        
-        margin-top: 0;
-        margin-right: 24px;
-        margin-bottom: 20px;
-        margin-left: 24px;
+        color:var(--additional-text-color);
         }
  .filter{
       height: 0;
@@ -247,7 +256,6 @@ padding-bottom: 200px;
 .list.button{
     display: flex;
     justify-content: center;
-    margin-top: 175px;
 }
 .list.button .btn.item+.btn.item {
     margin-left: 8px;
@@ -255,18 +263,15 @@ padding-bottom: 200px;
 .list.project{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 34px;
-    margin-bottom: 94px;
-}
-.project.item{
-    margin-right: 30px;
-    width:calc(100%-60px/3);
-}
-.project.item:nth-child(3n){
-    margin-right: 0;
+    margin-top: 50px;
+    gap: 30px;
 }
 .border.project{
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
